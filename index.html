@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login and Registration</title>
+    <link rel="stylesheet" href="styles.css">
+     
+</head>
+<body>
+<header>
+    <h2 class="logo">Logo</h2>
+    <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        
+    </nav>
+</header>
+    
+    <div class="container">
+    <h2>Sign Up</h2>
+    <div class="content">
+<form id="myForm" method="post">
+        <div class="user-details">
+          <div class="input-box">
+               <label class="details">Full Name:</label>
+              <input type="text" name="name" id="name" placeholder="Your Name" required>
+          </div>
+               <div class="gender">  
+                <label class="details" for="gender" id="gender">Gender:</label>  <br>
+                   <div class="mf">
+                <input type="radio"  name="gender" id="male" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio"  name="gender" id="female" value="female" required>
+                <label for="female">Female</label>
+                   </div>
+               </div>
+          <div class="input-box">
+                <label class="details">DOB:</label>
+                <input type="date" name="dob" id="dob" required>    
+          </div>
+          <div class="input-box">
+               <label class="details" >E-mail:</label>
+               <input type="email" name="email" id="email" placeholder="someone@example.com" required>  
+          </div>
+          <div class="input-box">
+              <label class="details" >Phone Number:</label>
+              <input type="tel" name="phone" id="phone" placeholder="+91 XXXXXXXXXX" required >     
+          </div>
+          <div class="input-box">
+               <label class="details" >Password:</label>
+              <input type="password" name="password"  id="password" placeholder="Create New Password" required>  
+          </div>
+        </div>
+           <div class="check" >
+                <label><input type="checkbox" id="checkbox" >
+                    I agree to the terms & conditions</label>  
+           </div>
+        <div>
+         <button type="button" onclick="submitForm()" class="btn">Submit</button>  
+        </div>
+          <div class="login-link" id="loginlink">
+                <p>Already have an account? <a href="#" >Login</a></p>
+          </div>
+</form>   
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
+    
